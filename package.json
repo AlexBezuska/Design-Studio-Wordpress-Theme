@@ -1,0 +1,27 @@
+{
+  "name": "daydreamfarm",
+  "version": "0.0.1",
+  "description": "A wordpress theme  and portfolio builder for Daydream Farm Design Studio",
+  "main": "index.js",
+  "scripts": {
+    "build-upload": "npm run build-css && npm run chmod && npm run rsync",
+    "build-css": "node-sass --include-path scss scss/main.scss design-studio/style.css",
+    "chmod": "sudo find design-studio/ -type f -exec chmod 644 {} \\; && sudo find design-studio/ -type d -exec chmod 775 {} \\;",
+    "rsync": "echo 'missing command'",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBezuska/Design-Studio-Wordpress-Theme.git"
+  },
+  "author": "Alex Bezuska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexBezuska/Design-Studio-Wordpress-Theme/issues"
+  },
+  "homepage": "https://github.com/AlexBezuska/Design-Studio-Wordpress-Theme#readme",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "json-2-csv": "^2.1.2",
+    "node-sass": "^4.7.2"
+  }
+}

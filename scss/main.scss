@@ -1,0 +1,57 @@
+/*!
+Theme Name: Design Studio
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: design-studio
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Design Studio is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "timeline.scss";
+@import "team.scss";
+@import "contact.scss";
+@import "footer.scss";
+
+body{
+	background: $cream !important;
+}
+
+.logo{
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	display: block;
+}
+
+.text-primary{
+	color: $lavender !important;
+}
+
+.btn-primary{
+	background:  $lavender !important;
+	border: 1px solid  $lavender !important;
+}
