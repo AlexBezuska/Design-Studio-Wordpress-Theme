@@ -10,11 +10,11 @@
 // Font Mixins
 
 @mixin script-font {
-  font-family: 'Lamar Pen', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 @mixin body-font {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @mixin heading-font {
-  font-family: 'Filosofia', serif !important;
+  font-family: 'Vollkorn SC', serif;
 }

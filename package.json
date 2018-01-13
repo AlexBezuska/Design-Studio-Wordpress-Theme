@@ -4,10 +4,10 @@
   "description": "A wordpress theme  and portfolio builder for Daydream Farm Design Studio",
   "main": "index.js",
   "scripts": {
-    "build-upload": "npm run build-css && npm run chmod && npm run rsync",
+    "build-upload": "npm run build-css && npm run chmod && npm run upload",
     "build-css": "node-sass --include-path scss scss/main.scss design-studio/style.css",
     "chmod": "sudo find design-studio/ -type f -exec chmod 644 {} \\; && sudo find design-studio/ -type d -exec chmod 775 {} \\;",
-    "rsync": "echo 'missing command'",
+    "upload": "sh upload.sh"
   },
   "repository": {
     "type": "git",

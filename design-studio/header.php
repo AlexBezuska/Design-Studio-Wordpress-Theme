@@ -32,7 +32,7 @@
     <!-- Custom fonts for this template -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-		<link rel="stylesheet" href="https://use.typekit.net/hoi5mhb.css">
+		<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
 
