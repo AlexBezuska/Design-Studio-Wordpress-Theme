@@ -4,7 +4,8 @@
   "description": "A wordpress theme  and portfolio builder for Daydream Farm Design Studio",
   "main": "index.js",
   "scripts": {
-    "build-upload": "npm run build-css && npm run chmod && npm run upload",
+    "build-upload": "npm run build-portfolio && npm run build-css && npm run chmod && npm run upload",
+    "build-portfolio": "node build-portfolio.js",
     "build-css": "node-sass --include-path scss scss/main.scss design-studio/style.css",
     "chmod": "sudo find design-studio/ -type f -exec chmod 644 {} \\; && sudo find design-studio/ -type d -exec chmod 775 {} \\;",
     "upload": "sh upload.sh"

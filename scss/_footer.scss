@@ -1,44 +1,123 @@
-// Styling for the footer
-footer {
-  background: darken($cream, 10%);
-  padding: 25px 0;
-  text-align: center;
-  span.copyright {
-    font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    @include heading-font;
-  }
-  ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    @include heading-font;
-  }
+// // Styling for the footer
+// footer {
+//   background: $lavender;
+//   padding: 25px 0;
+//   text-align: center;
+//   color: white;
+//   .footer-aside{
+//     text-align: left;
+//   }
+//
+//   .socials{
+//     text-decoration: none;
+//     ul{
+//       margin: 0;
+//     }
+//     li{
+//       display: inline-block;
+//       margin: 0 10px 0 0;
+//       i{
+//         font-size: 32px;
+//         color: white;
+//       }
+//     }
+//   }
+// }
+
+.search-text{
+  margin-top:50px;
+  background-color: darken($lavender, 10%);
+  padding-top:60px;
+  padding-bottom:60px;
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
-    a {
-      font-size: 20px;
-      line-height: 40px;
-      display: block;
-      width: 40px;
-      height: 40px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: white;
-      border-radius: 100%;
-      outline: none;
-      background-color: $lavender;
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $lavender;
-      }
-    }
+.search-text .input-search{
+  height:45px;
+  width:40%;
+  padding-left:20px;
+  color:#333;
+}
+
+.search-text .btn-search{
+  background: $color2;
+  border:none;
+  color:#FFF;
+  height: 45px;
+  width: 80px;
+}
+
+.search-text h4{
+  color: #FFF;
+  font-weight: 700;
+}
+
+footer{
+  background-color: darken($lavender, 5%);
+  padding:30px 0px;
+  color: white;
+
+  .logo{
+    width: 100%;
   }
+
+  .contact-info .heading , .menu .heading{
+    color: white;
+    font-weight: 800;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .contact-info li a , .menu li a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+
+  }
+
+  .contact-info li, .menu li{
+    margin-top: 5px;
+    list-style: none;
+  }
+
+  .address{
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+
+  .contact-info li a:hover , .menu li a:hover{
+
+    color: $color1 !important;
+    -webkit-transition: all 200 ease-in-out;
+    -moz-transition: all 200 ease-in-out;
+    -o-transition: all 200 ease-in-out;
+    transition: all 200 ease-in-out;
+  }
+
+  .contact-info li a .text{
+    display: inline-block;
+    position: relative;
+    top: -3px;
+  }
+
+  .fa{
+    margin-right: 10px;
+    font-size: 22px;
+    margin-top: 12px;
+  }
+
+  p{ color: white; }
+
+  .copyright{
+    font-size: 13px;
+    padding: 25px 0 0 0;
+    letter-spacing: 3px;
+  }
+
 }

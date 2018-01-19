@@ -1,10 +1,10 @@
 // Styling for the masthead
-header.hero {
+.hero {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('img/field-wash.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center center;
   @include background-cover;
   .intro-text {
@@ -15,7 +15,7 @@ header.hero {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-    
+
     }
     .intro-heading {
       font-size: 50px;
@@ -27,7 +27,7 @@ header.hero {
   }
 }
 @media(min-width:768px) {
-  header.hero {
+  .hero {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;

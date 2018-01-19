@@ -26,14 +26,15 @@
 
     <title>Daydream Farm Design Studio</title>
 
-		<!-- Bootstrap core CSS -->
+
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
 
 
@@ -47,20 +48,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-					<?php
-					the_custom_logo();
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-					endif;
-
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-					<?php
-					endif; ?>
+					<img class="header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/DaydreamFarmDesignStudio-Logo-Small.png"/>
 				</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -72,7 +60,7 @@
 							<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
 						</li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#specialties">Specialties</a>
             </li>
 
             <li class="nav-item">
@@ -85,5 +73,3 @@
         </div>
       </div>
     </nav>
-
-<div class="push-down-content"></div>

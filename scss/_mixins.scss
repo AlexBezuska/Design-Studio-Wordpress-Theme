@@ -13,8 +13,8 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 @mixin body-font {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
 }
 @mixin heading-font {
-  font-family: 'Vollkorn SC', serif;
+  font-family: 'Vollkorn SC', serif !important;
 }

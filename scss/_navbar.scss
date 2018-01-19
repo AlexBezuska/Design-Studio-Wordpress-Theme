@@ -1,4 +1,14 @@
 // Styling for the navbar
+
+.header-logo{
+  max-width: 200px;
+  width: 90%;
+  @media(min-width:730px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 #mainNav {
   background-color: $lavender !important;
   .navbar-toggler {
